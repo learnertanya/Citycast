@@ -1,7 +1,7 @@
 import { ColumnDef } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"
 import { ArrowUpDown, MoreHorizontal } from "lucide-react"
-
+import { Link } from "react-router-dom"
 export type City = {
     geoname_id: string;
     name: string;
@@ -18,17 +18,33 @@ export const columns: ColumnDef<City>[] = [
   },
   {
     accessorKey: "name",
-    header: ({ column }) => {
-        return (
-          <Button
-            variant="ghost"
-            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+    header: ({ column }) => (
+      <div className="flex items-center justify-end">
+        <Button
+          variant="ghost"
+          onClick={() =>
+            column.toggleSorting(column.getIsSorted() === "asc")
+          }
+        >
+          City
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      </div>
+    ),
+    cell: ({ cell }) => {
+      const cityName = cell.row.original.name;
+      const geonameId = cell.row.original.geoname_id;
+      return (
+        <div className="text-right">
+          <Link
+            to={`/city/${geonameId}/${encodeURIComponent(cityName)}`}
+            className="font-medium mr-2"
           >
-            City
-            <ArrowUpDown className="ml-2 h-4 w-4" />
-          </Button>
-        )
-      },
+            {cityName}
+          </Link>
+        </div>
+      );
+    },
   },
   {
     accessorKey: "cou_name_en",
