@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { DataTable } from "./data-table";
 import { columns, City } from "./columns";
