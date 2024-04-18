@@ -1,7 +1,6 @@
 
 
 # Citycast
-
 Citycast is a web application designed to provide users with information about cities around the world. It allows users to explore various cities, view their weather forecasts, and listen to curated playlists associated with each city.
 
 ## Table of Contents
@@ -9,13 +8,12 @@ Citycast is a web application designed to provide users with information about c
 2. [Technologies Used](#technologies-used)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+5. [Preview](#preview)
 
 ## Features
 - **City Information**: Users can search for cities and view information such as population, timezone, and a brief description.
 - **Weather Forecast**: Provides users with the current weather conditions.
-- **Infinite Scroll**: all cities in a table format with infinite scroll 
+- **Infinite Scroll**: All cities in a table format with infinite scroll 
 - **Responsive Design**: Optimized for various screen sizes, ensuring a seamless experience across devices.
 
 ## Technologies Used
