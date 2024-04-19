@@ -41,4 +41,5 @@ To run Citycast locally, follow these steps:
 ![Celsisi](https://github.com/learnertanya/Citycast/assets/94377598/647c296e-ecdf-419b-9f30-f338d8775c10)
 ![citycast](https://github.com/learnertanya/Citycast/assets/94377598/ec8ccd0e-2113-4e55-b5f3-852f32884c4c)
 ![table](https://github.com/learnertanya/Citycast/assets/94377598/1590e8df-9986-4b32-a761-86173bc19265)
+![thunderstotm](https://github.com/learnertanya/Citycast/assets/94377598/5c3bfdcc-9041-4df9-a855-2a4f78efbbb9)
 
